@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

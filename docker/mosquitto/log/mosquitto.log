@@ -1,0 +1,23 @@
+1745291927: mosquitto version 2.0.21 starting
+1745291927: Config loaded from /mosquitto/config/mosquitto.conf.
+1745291927: Opening ipv4 listen socket on port 1883.
+1745291927: Opening ipv6 listen socket on port 1883.
+1745291927: mosquitto version 2.0.21 running
+1745291941: New connection from 172.18.0.1:33204 on port 1883.
+1745291941: New client connected from 172.18.0.1:33204 as ESP32_fc0AC8 (p2, c1, k120).
+1745292039: mosquitto version 2.0.21 terminating
+1745292039: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1745292039: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1745292039: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1745292047: mosquitto version 2.0.21 starting
+1745292047: Config loaded from /mosquitto/config/mosquitto.conf.
+1745292047: Opening ipv4 listen socket on port 1883.
+1745292047: Opening ipv6 listen socket on port 1883.
+1745292047: mosquitto version 2.0.21 running
+1745292054: New connection from 172.18.0.1:53160 on port 1883.
+1745292054: New client connected from 172.18.0.1:53160 as ESP32_fc0AC8 (p2, c1, k120).
+1745292249: New connection from 172.18.0.1:37246 on port 1883.
+1745292249: Client ESP32_fc0AC8 already connected, closing old connection.
+1745292249: New client connected from 172.18.0.1:37246 as ESP32_fc0AC8 (p2, c1, k120).
+1745292311: New connection from 172.18.0.1:35194 on port 1883.
+1745292311: New client connected from 172.18.0.1:35194 as auto-A98F46D4-E327-4B67-0C71-458E8563EC8C (p2, c1, k60).

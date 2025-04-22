@@ -1,0 +1,2 @@
+source /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader/gdbinit/symbols
+source /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader/gdbinit/connect
