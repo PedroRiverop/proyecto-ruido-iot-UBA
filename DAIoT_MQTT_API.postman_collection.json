@@ -1,0 +1,129 @@
+{
+  "info": {
+    "name": "DAIoT MQTT API",
+    "_postman_id": "8b1cc2f1-9ee5-4b2c-a2a2-f11a3d4b7e35",
+    "description": "Coleccion de pruebas para las rutas REST del backend IoT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ultima lectura",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/datos/latest",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "datos",
+            "latest"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Todas las lecturas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/datos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "datos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "\u00daltimas 3 lecturas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/datos/ultimas?limit=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "datos",
+            "ultimas"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lecturas desde fecha",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/datos/desde?fecha=2025-04-24T00:00:00Z",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "datos",
+            "desde"
+          ],
+          "query": [
+            {
+              "key": "fecha",
+              "value": "2025-04-24T00:00:00Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Insertar lectura manual",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"ruido\": 66,\n  \"timestamp\": \"2025-04-24T10:00:00Z\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/datos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "datos"
+          ]
+        }
+      }
+    }
+  ]
+}

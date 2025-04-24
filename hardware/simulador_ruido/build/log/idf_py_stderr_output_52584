@@ -1,0 +1,14 @@
+Command: make -j 13 all
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c: In function 'mqtt_app_start':
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:130:14: error: 'struct broker_t' has no member named 'credentials'
+  130 |             .credentials = {
+      |              ^~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:130:28: error: extra brace group at end of initializer
+  130 |             .credentials = {
+      |                            ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:130:28: note: (near initialization for 'mqtt_cfg.broker')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:130:28: warning: excess elements in struct initializer
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:130:28: note: (near initialization for 'mqtt_cfg.broker')
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/simulador_ruido.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

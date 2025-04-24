@@ -1,0 +1,139 @@
+Command: /Users/jpedroriverop/.espressif/python_env/idf5.5_py3.9_env/bin/python /Users/jpedroriverop/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0001 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/simulador_ruido.elf /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/bootloader/bootloader.elf -m '/Users/jpedroriverop/.espressif/python_env/idf5.5_py3.9_env/bin/python' '/Users/jpedroriverop/esp/esp-idf/tools/idf.py' '-p' '/dev/cu.usbserial-0001'
+35) boot.esp32: SPI Speed      : 40MHz
+[0;32mI (39) boot.esp32: SPI Mode    K��entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+I (66�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3129-gd930a386da 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 23 2025 18:47:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e330h (123696) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0002e358 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002e37c vaddr=3ffb0000 size=01c9ch (  7324) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9b6c0h (636608) map[0m
+[0;32mI (361) esp_image: segment 4: paddr=000cb6e8 vaddr=3ffb1c9c size=02184h (  8580) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000cd874 vaddr=40080000 size=17a08h ( 96776) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) app_init: Application information:[0m
+[0;32mI (433) app_init: Project name:     simulador_ruido[0m
+[0;32mI (437) app_init: App version:      0f09a47-dirty[0m
+[0;32mI (442) app_init: Compile time:     Apr 23 2025 18:47:46[0m
+[0;32mI (447) app_init: ELF file SHA256:  698d227db...[0m
+[0;32mI (451) app_init: ESP-IDF:          v5.5-dev-3129-gd930a386da[0m
+[0;32mI (457) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (461) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (465) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (469) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (475) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8518 len 00027AE8 (158 KiB): DRAM[0m
+[0;32mI (485) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 40097A08 len 000085F8 (33 KiB): IRAM[0m
+[0;32mI (503) spi_flash: detected chip: generic[0m
+[0;32mI (505) spi_flash: flash io: dio[0m
+[0;33mW (508) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (521) main_task: Started on CPU0[0m
+[0;32mI (531) main_task: Calling app_main()[0m
+[0;32mI (531) SIMULADOR_RUIDO: Inicio del sistema[0m
+[0;32mI (561) wifi:wifi driver task: 3ffc0548, prio:23, stack:6656, core=0[0m
+[0;32mI (571) wifi:wifi firmware version: 656db1919e[0m
+[0;32mI (571) wifi:wifi certification version: v7.0[0m
+[0;32mI (571) wifi:config NVS flash: enabled[0m
+[0;32mI (571) wifi:config nano formatting: disabled[0m
+[0;32mI (581) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (581) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (581) wifi:Init management short buffer num: 32[0m
+[0;32mI (591) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (591) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (601) wifi:Init static rx buffer num: 10[0m
+[0;32mI (601) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (611) wifi_init: rx ba win: 6[0m
+[0;32mI (611) wifi_init: accept mbox: 6[0m
+[0;32mI (611) wifi_init: tcpip mbox: 32[0m
+[0;32mI (611) wifi_init: udp mbox: 6[0m
+[0;32mI (621) wifi_init: tcp mbox: 6[0m
+[0;32mI (621) wifi_init: tcp tx win: 5760[0m
+[0;32mI (621) wifi_init: tcp rx win: 5760[0m
+[0;32mI (631) wifi_init: tcp mss: 1440[0m
+[0;32mI (631) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (631) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (641) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (661) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (741) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (811) wifi:mode : sta (d8:bc:38:fc:0a:c8)[0m
+[0;32mI (811) wifi:enable tsf[0m
+[0;32mI (811) SIMULADOR_RUIDO: Conectando a red Wi-Fi: Tenda_A5B4D0...[0m
+[0;32mI (821) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (821) wifi:state: init -> auth (0xb0)[0m
+[1;31mE (831) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (831) SIMULADOR_RUIDO: Tarea de simulación iniciada[0m
+[1;31mE (831) esp-tls: Failed to open new connection[0m
+[0;32mI (831) main_task: Returned from app_main()[0m
+[0;32mI (841) wifi:E (841) transport_base: Failed to open a new connection[0m
+state: auth -> assoc (0x0)
+[1;31mE (851) mqtt_client: Error transport connect[0m
+[1;31mE (851) SIMULADOR_RUIDO: ❌ Error en la conexión MQTT[0m
+[0;33mW (861) SIMULADOR_RUIDO: ⚠️ Desconectado del broker MQTT[0m
+[0;32mI (861) SIMULADOR_RUIDO: Publicado: {"ruido": 66}[0m
+[0;32mI (871) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (881) wifi:connected with Tenda_A5B4D0, aid = 1, channel 4, 40U, bssid = 08:40:f3:a5:b4:d0[0m
+[0;32mI (881) wifi:security: WPA2-PSK, phy: bgn, rssi: -69[0m
+[0;32mI (901) wifi:pm start, type: 1[0m
+
+[0;32mI (901) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (911) wifi:<ba-add>idx:0 (ifx:0, 08:40:f3:a5:b4:d0), tid:0, ssn:2, winSize:64[0m
+[0;32mI (941) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4001) esp_netif_handlers: sta ip: 192.168.0.124, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4001) SIMULADOR_RUIDO: Conectado! IP ESP32: 192.168.0.124[0m
+[0;32mI (17061) SIMULADOR_RUIDO: ✅ Conectado al broker MQTT (TLS)[0m
+[0;32mI (17841) wifi:<ba-add>idx:1 (ifx:0, 08:40:f3:a5:b4:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (30871) SIMULADOR_RUIDO: Publicado: {"ruido": 69}[0m
+[0;32mI (60871) SIMULADOR_RUIDO: Publicado: {"ruido": 60}[0m
+[0;32mI (90871) SIMULADOR_RUIDO: Publicado: {"ruido": 69}[0m
+[0;32mI (120871) SIMULADOR_RUIDO: Publicado: {"ruido": 61}[0m
+[0;32mI (150871) SIMULADOR_RUIDO: Publicado: {"ruido": 65}[0m
+[0;32mI (180871) SIMULADOR_RUIDO: Publicado: {"ruido": 63}[0m
+[0;32mI (210871) SIMULADOR_RUIDO: Publicado: {"ruido": 69}[0m
+[0;32mI (240871) SIMULADOR_RUIDO: Publicado: {"ruido": 65}[0m
+[0;32mI (270871) SIMULADOR_RUIDO: Publicado: {"ruido": 66}[0m
+[0;32mI (300871) SIMULADOR_RUIDO: Publicado: {"ruido": 62}[0m
+[0;32mI (330871) SIMULADOR_RUIDO: Publicado: {"ruido": 61}[0m
+[0;32mI (360871) SIMULADOR_RUIDO: Publicado: {"ruido": 66}[0m
+[0;32mI (390871) SIMULADOR_RUIDO: Publicado: {"ruido": 68}[0m
+[0;32mI (420871) SIMULADOR_RUIDO: Publicado: {"ruido": 64}[0m
+[0;32mI (450871) SIMULADOR_RUIDO: Publicado: {"ruido": 63}[0m
+[0;32mI (480871) SIMULADOR_RUIDO: Publicado: {"ruido": 69}[0m
+[0;32mI (510871) SIMULADOR_RUIDO: Publicado: {"ruido": 65}[0m
+[0;32mI (540871) SIMULADOR_RUIDO: Publicado: {"ruido": 64}[0m
+[0;32mI (570871) SIMULADOR_RUIDO: Publicado: {"ruido": 68}[0m
+[0;32mI (600871) SIMULADOR_RUIDO: Publicado: {"ruido": 68}[0m
+[0;32mI (630871) SIMULADOR_RUIDO: Publicado: {"ruido": 65}[0m
+[0;32mI (660871) SIMULADOR_RUIDO: Publicado: {"ruido": 66}[0m
+[0;32mI (690871) SIMULADOR_RUIDO: Publicado: {"ruido": 69}[0m
+[0;32mI (720871) SIMULADOR_RUIDO: Publicado: {"ruido": 65}[0m

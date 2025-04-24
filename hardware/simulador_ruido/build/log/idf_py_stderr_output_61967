@@ -1,0 +1,33 @@
+Command: make -j 13 all
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c: In function 'mqtt_app_start':
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:132:14: error: 'struct broker_t' has no member named 'client_cert'
+  132 |             .client_cert = (const char *)client_cert_pem_start,
+      |              ^~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:132:28: warning: excess elements in struct initializer
+  132 |             .client_cert = (const char *)client_cert_pem_start,
+      |                            ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:132:28: note: (near initialization for 'mqtt_cfg.broker')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:14: error: 'struct broker_t' has no member named 'client_cert_len'
+  133 |             .client_cert_len = client_cert_pem_end - client_cert_pem_start,
+      |              ^~~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:32: warning: excess elements in struct initializer
+  133 |             .client_cert_len = client_cert_pem_end - client_cert_pem_start,
+      |                                ^~~~~~~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:32: note: (near initialization for 'mqtt_cfg.broker')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:14: error: 'struct broker_t' has no member named 'client_key'
+  134 |             .client_key = (const char *)client_key_pem_start,
+      |              ^~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:27: warning: excess elements in struct initializer
+  134 |             .client_key = (const char *)client_key_pem_start,
+      |                           ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:27: note: (near initialization for 'mqtt_cfg.broker')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:14: error: 'struct broker_t' has no member named 'client_key_len'
+  135 |             .client_key_len = client_key_pem_end - client_key_pem_start
+      |              ^~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:31: warning: excess elements in struct initializer
+  135 |             .client_key_len = client_key_pem_end - client_key_pem_start
+      |                               ^~~~~~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:31: note: (near initialization for 'mqtt_cfg.broker')
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/simulador_ruido.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

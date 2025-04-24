@@ -1,12 +1,41 @@
-version: "3.9"
-
 services:
   mosquitto:
-    image: eclipse-mosquitto:2
+    image: eclipse-mosquitto:2.0
     container_name: mosquitto
-    ports:
-      - "1883:1883"
+    user: "1883:1883"
     volumes:
       - ./docker/mosquitto/config:/mosquitto/config
       - ./docker/mosquitto/data:/mosquitto/data
       - ./docker/mosquitto/log:/mosquitto/log
+      - ./docker/mosquitto/certs:/mosquitto/certs
+    ports:
+      - "8883:8883"
+    restart: unless-stopped
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    container_name: backend
+    depends_on:
+      - mosquitto
+      - mongo
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/usr/src/app
+      - ./docker/mosquitto/certs:/docker/mosquitto/certs:ro
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+volumes:
+  mongo_data:

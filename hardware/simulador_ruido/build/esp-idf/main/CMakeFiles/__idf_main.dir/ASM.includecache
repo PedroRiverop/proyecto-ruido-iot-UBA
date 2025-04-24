@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/ca_cert.pem.S
+
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/client_cert.pem.S
+
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/client_key.pem.S
+

@@ -1,0 +1,59 @@
+Command: make -j 13 all
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c: In function 'mqtt_app_start':
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:132:14: error: 'struct credentials_t' has no member named 'client_cert'; did you mean 'client_id'?
+  132 |             .client_cert = (const char *)client_cert_pem_start,
+      |              ^~~~~~~~~~~
+      |              client_id
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:132:13: error: the address of 'client_cert_pem_start' will always evaluate as 'true' [-Werror=address]
+  132 |             .client_cert = (const char *)client_cert_pem_start,
+      |             ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:14: error: 'struct credentials_t' has no member named 'client_cert_len'
+  133 |             .client_cert_len = (client_cert_pem_end - client_cert_pem_start),
+      |              ^~~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:32: error: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  133 |             .client_cert_len = (client_cert_pem_end - client_cert_pem_start),
+      |                                ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:133:32: note: (near initialization for 'mqtt_cfg.credentials.authentication.password')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:14: error: 'struct credentials_t' has no member named 'client_key'; did you mean 'client_id'?
+  134 |             .client_key = (const char *)client_key_pem_start,
+      |              ^~~~~~~~~~
+      |              client_id
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:27: warning: excess elements in struct initializer
+  134 |             .client_key = (const char *)client_key_pem_start,
+      |                           ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:134:27: note: (near initialization for 'mqtt_cfg.credentials')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:14: error: 'struct credentials_t' has no member named 'client_key_len'
+  135 |             .client_key_len = (client_key_pem_end - client_key_pem_start),
+      |              ^~~~~~~~~~~~~~
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:31: warning: excess elements in struct initializer
+  135 |             .client_key_len = (client_key_pem_end - client_key_pem_start),
+      |                               ^
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:135:31: note: (near initialization for 'mqtt_cfg.credentials')
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:125:41: error: missing braces around initializer [-Werror=missing-braces]
+  125 |     esp_mqtt_client_config_t mqtt_cfg = {
+      |                                         ^
+  126 |         .broker.address.uri = "mqtts://192.168.0.122:8883",
+      |                                                           }}
+  127 |         .broker.verification.certificate = (const char *)ca_cert_pem_start,
+      |                                                                           }}
+  128 |         .broker.verification.certificate_len = (ca_cert_pem_end - ca_cert_pem_start),
+      |                                                                                     }}
+......
+  133 |             .client_cert_len = (client_cert_pem_end - client_cert_pem_start),
+      |                                {                                            }
+/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:125:41: error: missing braces around initializer [-Werror=missing-braces]
+  125 |     esp_mqtt_client_config_t mqtt_cfg = {
+      |                                         ^
+  126 |         .broker.address.uri = "mqtts://192.168.0.122:8883",
+      |                                                           }}
+  127 |         .broker.verification.certificate = (const char *)ca_cert_pem_start,
+      |                                                                           }}
+  128 |         .broker.verification.certificate_len = (ca_cert_pem_end - ca_cert_pem_start),
+      |                                                                                     }}
+......
+  133 |             .client_cert_len = (client_cert_pem_end - client_cert_pem_start),
+      |                                {                                            }
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/simulador_ruido.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

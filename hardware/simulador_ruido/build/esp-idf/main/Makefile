@@ -175,6 +175,30 @@ __idf_main/fast:
 	cd /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
 .PHONY : __idf_main/fast
 
+__/__/ca_cert.pem.obj: __/__/ca_cert.pem.S.obj
+.PHONY : __/__/ca_cert.pem.obj
+
+# target to build an object file
+__/__/ca_cert.pem.S.obj:
+	cd /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/ca_cert.pem.S.obj
+.PHONY : __/__/ca_cert.pem.S.obj
+
+__/__/client_cert.pem.obj: __/__/client_cert.pem.S.obj
+.PHONY : __/__/client_cert.pem.obj
+
+# target to build an object file
+__/__/client_cert.pem.S.obj:
+	cd /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/client_cert.pem.S.obj
+.PHONY : __/__/client_cert.pem.S.obj
+
+__/__/client_key.pem.obj: __/__/client_key.pem.S.obj
+.PHONY : __/__/client_key.pem.obj
+
+# target to build an object file
+__/__/client_key.pem.S.obj:
+	cd /Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/__/__/client_key.pem.S.obj
+.PHONY : __/__/client_key.pem.S.obj
+
 simulador_ruido.obj: simulador_ruido.c.obj
 .PHONY : simulador_ruido.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... __idf_main"
+	@echo "... __/__/ca_cert.pem.obj"
+	@echo "... __/__/client_cert.pem.obj"
+	@echo "... __/__/client_key.pem.obj"
 	@echo "... simulador_ruido.obj"
 	@echo "... simulador_ruido.i"
 	@echo "... simulador_ruido.s"

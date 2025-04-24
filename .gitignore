@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+.env
+
+# Docker
+docker/mongo/data/
+docker/mosquitto/data/
+docker/mosquitto/log/
+
+# Certificados TLS
+**/certs/
+*.pem
+*.crt
+*.key
+
+# Otros
+*.log
+.vscode/

@@ -1,9 +1,0 @@
-Command: make -j 13 all
-/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c: In function 'simulador_ruido_task':
-/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c:14:30: error: implicit declaration of function 'esp_random'; did you mean 'srandom'? [-Wimplicit-function-declaration]
-   14 |         int ruido_db = 60 + (esp_random() % 10);  // Valor fijo entre 60 y 69
-      |                              ^~~~~~~~~~
-      |                              srandom
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/simulador_ruido.c.obj] Error 1
-make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
-make: *** [all] Error 2

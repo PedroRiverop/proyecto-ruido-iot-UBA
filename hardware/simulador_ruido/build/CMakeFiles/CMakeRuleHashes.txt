@@ -26,6 +26,9 @@ bd1c12787f441da7aad461be63bd3860 bootloader-prefix/src/bootloader-stamp/bootload
 969e46e972fcbff719cc4afcc04d234a bootloader-prefix/src/bootloader-stamp/bootloader-mkdir
 c05ed21f3cfd028423411bd3fda6fe5c bootloader-prefix/src/bootloader-stamp/bootloader-patch
 6819f4da3b6878106eaa5f80a71ae8c4 bootloader-prefix/src/bootloader-stamp/bootloader-update
+7523252d5c473cbb96f89104d37d20b5 ca_cert.pem.S
+9e4a351d999eb7d021ec72212a80eb88 client_cert.pem.S
+efe3bf9b7c9e6ca254cc7859bb98b6cd client_key.pem.S
 22832a5eb0785b93a744215e4d6e5417 esp-idf/bootloader/CMakeFiles/bootloader-flash
 cc63414c147d5269d7533093853dae72 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash
 579cd34d8a9b05c871761efb428afa47 esp-idf/efuse/CMakeFiles/efuse-common-table

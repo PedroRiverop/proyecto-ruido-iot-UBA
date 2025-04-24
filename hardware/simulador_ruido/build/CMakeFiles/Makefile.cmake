@@ -213,6 +213,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/jpedroriverop/esp/esp-idf/tools/cmake/version.cmake"
   "/Users/jpedroriverop/esp/esp-idf/tools/kconfig_new/confgen.py"
   "/Users/jpedroriverop/esp/esp-idf/tools/kconfig_new/config.env.in"
+  "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/.git/HEAD"
+  "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/.git/refs/heads/main"
   "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/CMakeLists.txt"
   "CMakeFiles/4.0.1/CMakeASMCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeCCompiler.cmake"
@@ -289,6 +291,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/git-data/HEAD"
+  "CMakeFiles/git-data/grabRef.cmake"
+  "CMakeFiles/git-data/head-ref"
   "CMakeFiles/git-data/HEAD"
   "CMakeFiles/git-data/grabRef.cmake"
   "CMakeFiles/git-data/head-ref"

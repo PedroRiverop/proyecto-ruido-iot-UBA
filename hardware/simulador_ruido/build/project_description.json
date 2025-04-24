@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "simulador_ruido",
-    "project_version":    "1",
+    "project_version":    "0f09a47-dirty",
     "project_path":       "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido",
     "idf_path":           "/Users/jpedroriverop/esp/esp-idf",
     "build_dir":          "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build",
@@ -1225,7 +1225,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c" ],
+            "sources": [ "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/main/simulador_ruido.c", "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/ca_cert.pem.S", "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/client_cert.pem.S", "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build/client_key.pem.S" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
