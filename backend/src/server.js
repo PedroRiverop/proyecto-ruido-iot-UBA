@@ -46,7 +46,11 @@ app.get('/api/stream', (req, res) => {
   });
 });
 
-
+let estadoSistema = {
+    mqtt: false,
+    mongo: false
+  };
+  
 
 const PORT = process.env.PORT || 3000;
 
@@ -60,8 +64,10 @@ async function connectMongoDB() {
   try {
     await mongoClient.connect();
     db = mongoClient.db();
+    estadoSistema.mongo = true;
     console.log('✅ Conectado a MongoDB');
   } catch (error) {
+    estadoSistema.mongo = false;
     console.error('❌ Error al conectar a MongoDB:', error);
     process.exit(1);
   }
@@ -82,6 +88,7 @@ console.log('🔌 Conectando al broker MQTT...');
 const client = mqtt.connect(process.env.MQTT_HOST, options);
 
 client.on('connect', () => {
+  estadoSistema.mqtt = true;
   console.log('✅ Conectado al broker MQTT con TLS');
   client.subscribe(process.env.MQTT_TOPIC, (err) => {
     if (err) {
@@ -113,10 +120,16 @@ client.on('message', async (topic, message) => {
     console.log('💾 Guardado en MongoDB');
     enviarSSE(lectura);  // 📡 Enviar a frontend por SSE
   } catch (err) {
+    estadoSistema.mqtt = false;
     console.error('❌ Error procesando el mensaje MQTT:', err);
   }
 });
 
+
+app.get('/api/status', (req, res) => {
+    res.json(estadoSistema);
+  });
+  
 // =============================
 // 🚀 Inicialización
 // =============================
