@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "simulador_ruido",
-    "project_version":    "0f09a47-dirty",
+    "project_version":    "68c6ccb-dirty",
     "project_path":       "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido",
     "idf_path":           "/Users/jpedroriverop/esp/esp-idf",
     "build_dir":          "/Users/jpedroriverop/proyectos/proyecto-ruido-iot/hardware/simulador_ruido/build",
