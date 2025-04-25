@@ -57,6 +57,12 @@ docker-compose up --build
 
 ---
 
+![Dashboard en tiempo real](assets/vite1.png)
+![Dashboard en tiempo real](assets/vite2.png)
+![Dashboard en tiempo real](assets/vite3.png)
+
+---
+
 ## 🏫 Créditos
 
 **Autor:** Pedro Rivero Peña  
